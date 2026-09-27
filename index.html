@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelTales - Explore The India</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🌍 TravelTales
+            </div>
+
+           <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="#destinations">Destinations</a></li>
+
+    <li><a href="#blogs">Blogs</a></li>
+
+    <li><a href="#gallery">Gallery</a></li>
+
+    <li><a href="#reviews">Reviews</a></li>
+
+    <li><a href="#about">About</a></li>
+
+    <li><a href="#contact">Contact</a></li>
+
+    <li>
+    <a href="#login">Login</a>
+</li>
+
+</ul>
+
+            <button class="menu-btn">☰</button>
+            <button class="theme-btn" id="themeButton">🌙</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Explore The India</h1>
+
+            <p>
+                Discover beautiful destinations, amazing travel stories
+                and unforgettable experiences.
+            </p>
+
+            <button class="explore-btn">
+                Explore Destinations
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Destinations -->
+    <section class="destinations" id="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <p class="section-description">
+            Explore some of the most beautiful places around the world.
+        </p>
+
+        <!-- Destination Search -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="destinationSearch"
+        placeholder="Search destination..."
+    >
+
+    <button id="searchButton">
+        🔍 Search
+    </button>
+
+</div>
+
+<!-- Destination Filters -->
+
+<div class="filter-buttons">
+
+    <button class="filter-btn active" data-category="all">
+        All
+    </button>
+
+    <button class="filter-btn" data-category="mountains">
+        Mountains
+    </button>
+
+    <button class="filter-btn" data-category="beaches">
+        Beaches
+    </button>
+
+    <button class="filter-btn" data-category="historical">
+        Historical
+    </button>
+
+</div>
+
+        <div class="destination-container" data-category="mountains">
+
+            <div class="destination-card" data-category="mountains">
+
+    <img src="Images/manali.jpg" alt="Manali">
+
+    <h3>Manali</h3>
+
+    <p>
+        Beautiful mountains and peaceful valleys.
+    </p>
+
+    <button class="explore-btn-card">
+        Explore
+    </button>
+
+    <button class="favorite-btn" data-name="Manali">
+        ♡ Favorite
+    </button>
+
+</div>
+
+            <div class="destination-card" data-category="beaches">
+
+    <img src="Images/goa.jpg" alt="Goa">
+
+    <h3>Goa</h3>
+
+    <p>
+        Relax on beautiful beaches and enjoy the sunshine.
+    </p>
+
+    <button class="explore-btn-card">
+        Explore
+    </button>
+
+    <button class="favorite-btn" data-name="Goa">
+        ♡ Favorite
+    </button>
+
+</div>
+
+            <div class="destination-card" data-category="mountains">
+
+    <img src="Images/kashmir.jpg" alt="Kashmir">
+
+    <h3>Kashmir</h3>
+
+    <p>
+        Discover breathtaking mountains and scenic landscapes.
+    </p>
+
+    <button class="explore-btn-card">
+        Explore
+    </button>
+
+    <button class="favorite-btn" data-name="Kashmir">
+        ♡ Favorite
+    </button>
+
+</div>
+
+            <div class="destination-card" data-category="historical">
+
+    <img src="Images/jaipur.jpg" alt="Jaipur">
+
+    <h3>Jaipur</h3>
+
+    <p>
+        Explore beautiful forts, palaces and rich history.
+    </p>
+
+    <button class="explore-btn-card">
+        Explore
+    </button>
+
+    <button class="favorite-btn" data-name="Jaipur">
+        ♡ Favorite
+    </button>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Travel Blogs -->
+    <section class="blogs" id="blogs">
+
+        <h2>Latest Travel Blogs</h2>
+
+        <p class="section-description">
+            Read travel stories, tips and experiences from travelers.
+        </p>
+
+        <div class="blog-container">
+
+            <article class="blog-card">
+
+                <img src="Images/goa-blog.jpg" alt="Goa Travel">
+
+                <div class="blog-content">
+
+                    <h3>Exploring Goa</h3>
+
+                    <p>
+                        Discover beautiful beaches, amazing food
+                        and exciting places in Goa.
+                    </p>
+
+                    <a href="javascript:void(0);" class="read-more-btn" data-blog="goa">
+    Read More →
+</a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <img src="Images/manali-blog.jpg" alt="Manali Travel">
+
+                <div class="blog-content">
+
+                    <h3>My Trip to Manali</h3>
+
+                    <p>
+                        Experience the beautiful mountains,
+                        valleys and adventures of Manali.
+                    </p>
+
+                    <a href="javascript:void(0);" class="read-more-btn" data-blog="manali">
+    Read More →
+</a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <img src="Images/jaipur-blog.jpg" alt="Jaipur Travel">
+
+                <div class="blog-content">
+
+                    <h3>Discovering Jaipur</h3>
+
+                    <p>
+                        Explore the historical forts, culture
+                        and colorful streets of Jaipur.
+                    </p>
+
+                    <a href="javascript:void(0);" class="read-more-btn" data-blog="jaipur">
+    Read More →
+</a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================
+     TRAVEL GALLERY
+     ======================================== -->
+
+<section class="gallery" id="gallery">
+
+    <h2>Travel Gallery</h2>
+
+    <p class="section-description">
+        Explore beautiful moments from amazing destinations.
+    </p>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+            <img src="Images/manali.jpg" alt="Manali">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Images/goa.jpg" alt="Goa">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Images/kashmir.jpg" alt="Kashmir">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Images/jaipur.jpg" alt="Jaipur">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Images/goa-blog.jpg" alt="Goa Travel">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Images/manali-blog.jpg" alt="Manali Travel">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     IMAGE MODAL
+     ======================================== -->
+
+<div class="image-modal" id="imageModal">
+
+    <span class="close-modal" id="closeModal">
+        &times;
+    </span>
+
+    <img id="modalImage" src="" alt="Travel Image">
+
+</div>
+
+<!-- ========================================
+     BLOG DETAILS
+     ======================================== -->
+
+<section class="blog-details" id="blogDetails">
+
+    <button id="closeBlog" class="close-blog">
+        ← Back to Blogs
+    </button>
+
+    <div class="blog-details-container">
+
+        <img
+            id="detailImage"
+            src=""
+            alt="Travel Blog"
+        >
+
+        <div class="blog-details-content">
+
+            <p class="blog-date" id="detailDate"></p>
+
+            <h2 id="detailTitle"></h2>
+
+            <p id="detailText"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     TRAVELER REVIEWS
+     ======================================== -->
+
+<section class="reviews" id="reviews">
+
+    <h2>Traveler Reviews</h2>
+
+    <p class="section-description">
+        Read what travelers say about their experiences.
+    </p>
+
+
+    <!-- Existing Reviews -->
+
+    <div class="reviews-container" id="reviewsContainer">
+
+        <div class="review-card">
+
+            <div class="review-rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>Rahul Sharma</h3>
+
+            <p class="review-place">
+                Manali
+            </p>
+
+            <p>
+                "TravelTales helped me discover some
+                amazing places in Manali. Beautiful experience!"
+            </p>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-rating">
+                ⭐⭐⭐⭐
+            </div>
+
+            <h3>Priya Patel</h3>
+
+            <p class="review-place">
+                Goa
+            </p>
+
+            <p>
+                "The travel information was useful and
+                the gallery was amazing."
+            </p>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>Arjun Singh</h3>
+
+            <p class="review-place">
+                Jaipur
+            </p>
+
+            <p>
+                "Jaipur is a beautiful place.
+                I really enjoyed reading the travel blogs."
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Review Form -->
+
+    <div class="review-form-container">
+
+        <h3>Share Your Experience</h3>
+
+        <form id="reviewForm">
+
+            <div class="form-group">
+
+                <label for="reviewName">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="reviewName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="reviewDestination">
+                    Destination
+                </label>
+
+                <select id="reviewDestination" required>
+
+                    <option value="">
+                        Select Destination
+                    </option>
+
+                    <option value="Manali">
+                        Manali
+                    </option>
+
+                    <option value="Goa">
+                        Goa
+                    </option>
+
+                    <option value="Kashmir">
+                        Kashmir
+                    </option>
+
+                    <option value="Jaipur">
+                        Jaipur
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Rating
+                </label>
+
+                <select id="reviewRating" required>
+
+                    <option value="">
+                        Select Rating
+                    </option>
+
+                    <option value="5">
+                        ⭐⭐⭐⭐⭐
+                    </option>
+
+                    <option value="4">
+                        ⭐⭐⭐⭐
+                    </option>
+
+                    <option value="3">
+                        ⭐⭐⭐
+                    </option>
+
+                    <option value="2">
+                        ⭐⭐
+                    </option>
+
+                    <option value="1">
+                        ⭐
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="reviewText">
+                    Your Review
+                </label>
+
+                <textarea
+                    id="reviewText"
+                    rows="5"
+                    placeholder="Write your experience..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-review">
+                Submit Review
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     ABOUT TRAVELTALES
+     ======================================== -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <div class="about-content">
+
+            <h2>About TravelTales</h2>
+
+            <p>
+                TravelTales is a travel blogging website created
+                for travelers who love exploring new places,
+                discovering different cultures and sharing
+                unforgettable experiences.
+            </p>
+
+            <p>
+                Our goal is to provide a simple and attractive
+                platform where travelers can discover destinations,
+                read travel stories and explore beautiful travel
+                moments.
+            </p>
+
+            <button class="about-btn">
+                Explore More
+            </button>
+
+        </div>
+
+
+        <div class="about-features">
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    🌍
+                </div>
+
+                <h3>Explore</h3>
+
+                <p>
+                    Discover beautiful destinations
+                    around the world.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    📝
+                </div>
+
+                <h3>Share Stories</h3>
+
+                <p>
+                    Read and share interesting
+                    travel experiences.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    📸
+                </div>
+
+                <h3>Capture Moments</h3>
+
+                <p>
+                    Enjoy beautiful travel
+                    photographs and memories.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    ❤️
+                </div>
+
+                <h3>Travel Better</h3>
+
+                <p>
+                    Save your favorite destinations
+                    for future trips.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     CONTACT SECTION
+     ======================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>Contact TravelTales</h2>
+
+            <p>
+                Have a question, suggestion or travel story?
+                Feel free to contact us.
+            </p>
+
+            <div class="contact-item">
+                <span>📧</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>traveltales@example.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <h3>Location</h3>
+                    <p>India</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📞</span>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+
+        <div class="contact-form-container">
+
+            <h3>Send Us a Message</h3>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="contactName">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactSubject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="Enter subject"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactMessage">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="contactMessage"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="contact-submit"
+                >
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     LOGIN / REGISTER
+     ======================================== -->
+
+<section class="auth-section" id="login">
+
+    <div class="auth-container">
+
+        <!-- Login Form -->
+
+        <div class="auth-box" id="loginBox">
+
+            <h2>Welcome Back</h2>
+
+            <p>Login to continue your TravelTales journey.</p>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="#" id="showRegister">
+                    Register
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Register Form -->
+
+        <div class="auth-box hidden" id="registerBox">
+
+            <h2>Create Account</h2>
+
+            <p>Join the TravelTales community.</p>
+
+            <form id="registerForm">
+
+                <div class="form-group">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="registerEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Create password"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm password"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Register
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="#" id="showLogin">
+                    Login
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🌍 TravelTales</h3>
+
+        <p>
+            Explore the world. Share your journey.
+        </p>
+
+        <p>
+            © 2026 TravelTales. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ========================================
+     FOOTER
+     ======================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-column">
+
+            <h3>TravelTales</h3>
+
+            <p>
+                Explore beautiful destinations, discover
+                amazing travel stories and share your
+                unforgettable journeys.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="#destinations">Destinations</a>
+
+            <a href="#blogs">Blogs</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#reviews">Reviews</a>
+
+        </div>
+
+
+        <!-- Explore -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="#about">About Us</a>
+
+            <a href="#contact">Contact Us</a>
+
+            <a href="#login">Login</a>
+
+        </div>
+
+
+        <!-- Social Media -->
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    📷
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    𝕏
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    ▶
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 TravelTales. All Rights Reserved.
+        </p>
+
+        <p>
+            Made with ❤️ for Travel Lovers
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Back To Top Button -->
+
+<button id="backToTop" class="back-to-top" onclick="goToTop()">↑</button>
+
+<script src="JS/script.js"></script>
+</body>
+</html>
